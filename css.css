@@ -1,5 +1,5 @@
 * {
-   background-color: black;
+   background-color: rgb(0, 0, 0);
     margin:0; 
     padding:0; 
     box-sizing: border-box;
@@ -7,12 +7,15 @@
 }
 body {
     height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+
 }
 
 iframe {
     position: absolute;
     top: 0; 
     left: 0;
+    cursor: grab;
 }
 
 .navbar{
@@ -75,7 +78,7 @@ iframe {
     top : 50%;
     left: 70%;
     border: 0;
-    border-radius: 10px;
+    opacity: 80%;
     padding: .5rem 1rem;
     cursor: pointer;
     transition: all .5s;
@@ -86,3 +89,68 @@ iframe {
     color: azure;
 
 }
+
+
+
+.container .LVAS a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .container a img {
+    position: relative;
+    width: 25%;
+    height: 50%;
+    padding: 3px;
+    margin-left: 3px;
+    margin-bottom: 10%;
+    transition: 0.4s;
+    filter: blur(0);
+    cursor: pointer;
+    
+ 
+}
+
+
+.container .LVAS_img {
+    margin-top: 10%;
+}
+.container img:hover{
+    transition: 0.4s;
+    filter: blur(3px);
+    
+ 
+}
+.container .LVAS .LVAS_img .icon_music {
+    visibility: hidden;
+    text-decoration: none;
+    background-color: white;
+    position: absolute;
+    align-items: center;
+    visibility :hidden;
+    cursor: auto
+    
+    
+
+
+}
+.container .LVAS .LVAS_img:hover +.icon_music{
+    background-color: white;
+    position: absolute;
+    align-items: center;
+    visibility: visible;
+}
+
+.container .LVAS_single a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .Infernus a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
