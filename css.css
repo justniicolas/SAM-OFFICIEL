@@ -1,3 +1,4 @@
+
 * {
    background-color: rgb(0, 0, 0);
     margin:0; 
@@ -81,76 +82,222 @@ iframe {
     opacity: 80%;
     padding: .5rem 1rem;
     cursor: pointer;
-    transition: all .5s;
+    transition:  3s;
+    font-family: 'Bebas Neue', cursive;
+    font-size:x-large;
 }
+
 
 .btn:hover {
     background: black;
     color: azure;
+    transition: .5s;
+
+}
+
+.icon {
+    margin-bottom: 10%;
+    margin-top: -30%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    color: rgb(0, 0, 0);
+}
+i:hover {  
+    color: #fff;
+    transition: 1s;
+}
+
+.btn_cover {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+    padding: 10px;
+    border: 0;
+    transition: 1s;
+    opacity: 0;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all .5s;  
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: medium;
+    transition: 1.5s;
+
+}
+p{
+    margin: 3px;
+    background: transparent;
+    color: white;
+}
+.soon {
+    z-index: 10;
+    margin-top: -23%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15%;
+    font-size: xx-large;
+    
+}
+.btn_cover:hover { 
+    transition: 1s;
+    opacity: 1;
 
 }
 
 
-
-.container .LVAS a {
+.container .LVAS {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10%;
+    
   }
 
   
-  .container a img {
+  .container img {
     position: relative;
     width: 25%;
     height: 50%;
+    margin-bottom: 10%;
     padding: 3px;
     margin-left: 3px;
-    margin-bottom: 10%;
-    transition: 0.4s;
+    transition: 1s;
     filter: blur(0);
-    cursor: pointer;
+    
     
  
 }
 
 
-.container .LVAS_img {
+
+ /* IMG PREMIERE*/
+.container .LVAS_single_img {
     margin-top: 10%;
+    filter: blur(13px);
 }
 .container img:hover{
-    transition: 0.4s;
+    transition: 1s;
     filter: blur(3px);
     
  
 }
-.container .LVAS .LVAS_img .icon_music {
-    visibility: hidden;
+.container .LVAS .icon_music {
+   
     text-decoration: none;
-    background-color: white;
     position: absolute;
     align-items: center;
-    visibility :hidden;
-    cursor: auto
-    
-    
-
-
-}
-.container .LVAS .LVAS_img:hover +.icon_music{
-    background-color: white;
-    position: absolute;
-    align-items: center;
-    visibility: visible;
+    cursor: pointer; 
 }
 
-.container .LVAS_single a{
+
+.container .LVAS_single {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10%;
+
+    
 }
 
-.container .Infernus a{
+.container .Infernus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10%;
+    
   }
+
+  .container .Univers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+    height: 100%;
+    width: 100%;
+
+    
+  }
+
+
+@media screen and (max-width:1200px) {
+    .btn_cover {
+        opacity: 1;
+    
+    }
+    .container img {
+        position: relative;
+        width: 50%;
+        height: 100%;
+
+    }
+    .btn_cover {
+        opacity: 1;
+        
+        
+   
+    }
+    .icon{
+        width: auto;
+        height: auto;
+        margin-top: -10%;  
+        display: flex;
+        
+     }
+    .dispo {
+        display: none;
+    }
+    i{
+        color: #fff;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .btn{
+        left: 100px;
+        bottom: 100px;
+    }
+    .soon{
+        font-size: medium;
+        margin-top: -35%;
+        margin-bottom: 35%;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .btn{
+        left: 100px;
+        bottom: 100px;
+    }
+    
+    .btn_cover {
+        opacity: 1;
+    
+    }
+
+    .container img {
+        position: relative;
+        width: 75%;
+        height: 100%;
+    
+
+    }
+    .container .LVAS_single {
+        padding-top: 100px;
+    }
+
+    
+    .soon{
+        margin-top: -45%;
+        margin-bottom: 45%;
+    }
+
+    
+}
